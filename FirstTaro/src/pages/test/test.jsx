@@ -4,11 +4,6 @@ import testImage from '../../images/test.jpg'
 import './test.styl'
 
 export default class Test extends Component {
-
-  config = {
-    navigationBarTitleText: '测试页面'
-  }
-
   state = {
     list: [
       {id: 1, name: '测试1'},
@@ -20,6 +15,10 @@ export default class Test extends Component {
       {id: 7, name: '测试7'},
       {id: 8, name: '测试8'},
     ]
+  }
+
+  config = {
+    navigationBarTitleText: '测试页面'
   }
 
   clickHandle() {
@@ -36,7 +35,7 @@ export default class Test extends Component {
         <Image className='img' src={require('../../images/test.jpg')} />
         <Image className='img' src={testImage} />
         {
-          list.map((item) =>(
+          list.filter(item => item.id > 4).map((item) =>(
             <View key={item.id}>
               <Text>{item.name}</Text>
             </View>
