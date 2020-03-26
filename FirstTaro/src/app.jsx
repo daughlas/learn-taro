@@ -21,6 +21,7 @@ class App extends Component {
 
   config = {
     pages: [
+      'pages/event/event',
       'pages/dialog/testDialog',
       'pages/test/test',
       'pages/index/index'
