@@ -4,7 +4,9 @@
 /node_modules
 /.pnp
 .pnp.js
+01_first_taro/node_modules
 02_question_weapp/node_modules
+03_cnode/node_modules
 
 # testing
 /coverage
